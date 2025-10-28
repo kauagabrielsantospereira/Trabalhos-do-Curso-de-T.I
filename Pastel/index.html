@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <p>Informe o número 1:</p>
+    <input id="num1" type="number">
+    <p>Informe o número 2:</p>
+    <input id="num2" type="number">
+    <br><br>
+    <button type="button" onclick="calcular('somar')">Somar</button>
+    <button type="button" onclick="calcular('subtrair')">Subtrair</button>
+    <button type="button" onclick="calcular('multiplicar')">Multiplicar</button>
+    <button type="button" onclick="calcular('dividir')">Dividir</button>
+    <h4>Resultado:</h4>
+    <div id="resultado"></div>
+    <br>
+    <button type="button" onclick="exibirCharmander()">Exibir Charmander</button>
+    <div id="pokemon-info"></div>
+    <br>
+    <button type="button" onclick="exibirGato()">Exibir Gato</button>
+    <div id="gato-info"></div>
+
+    <script>
+        function calcular(operacao) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('resultado').innerHTML = "Por favor, insira números válidos!";
+                return;
+            }
+
+            let resultado;
+            switch (operacao) {
+                case 'somar':
+                    resultado = num1 + num2;
+                    break;
+                case 'subtrair':
+                    resultado = num1 - num2;
+                    break;
+                case 'multiplicar':
+                    resultado = num1 * num2;
+                    break;
+                case 'dividir':
+                    resultado = num2 === 0 ? "Não é possível dividir por zero!" : num1 / num2;
+                    break;
+            }
+            document.getElementById('resultado').innerHTML = `Resultado: ${resultado}`;
+        }
+
+        function exibirCharmander() {
+            fetch('https://pokeapi.co/api/v2/pokemon/charmander')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('pokemon-info').innerHTML = `
+                        <h4>${data.name.toUpperCase()}</h4>
+                        <img src="${data.sprites.front_default}" width="300">
+                    `;
+                })
+                .catch(err => console.error('Erro ao buscar imagem de Charmander:', err));
+        }
+
+        function exibirGato() {
+            fetch('https://api.thecatapi.com/v1/images/search')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('gato-info').innerHTML = `
+                        <img src="${data[0].url}" width="300">
+                    `;
+                })
+                .catch(err => console.error('Erro ao buscar imagem de gato:', err));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="STYLE.CSS">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <div class="calculadora">
+            <input type="text" disabled id="display">
+            <div class="box-bottons">
+                <button onclick="clean()">C</button>
+                <button onclick="back()">&lt;</button>
+                <button onclick="insertTODisplay('/')">/</button>
+                <button onclick="insertTODisplay('*')">*</button>
+                <button onclick="insertTODisplay('7')">7</button>
+                <button onclick="insertTODisplay('8')">8</button>
+                <button onclick="insertTODisplay('9')">9</button>
+                <button onclick="insertTODisplay('-')">-</button>
+                <button onclick="insertTODisplay('4')">4</button>
+                <button onclick="insertTODisplay('5')">5</button>
+                <button onclick="insertTODisplay('6')">6</button>
+                <button onclick="insertTODisplay('+')">+</button>
+                <button onclick="insertTODisplay('1')">1</button>
+                <button onclick="insertTODisplay('2')">2</button>
+                <button onclick="insertTODisplay('3')">3</button>
+                <button class="btn-zero" onclick="insertTODisplay('0')">0</button>
+                <button onclick="insertTODisplay('.')">.</button>
+                <button class="btn-result" onclick="insertTODisplay('=')">=</button>
+            </div>
+            <script src="script.js"></script>
+    </body>

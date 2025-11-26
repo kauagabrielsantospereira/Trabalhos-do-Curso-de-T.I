@@ -1,0 +1,74 @@
+{
+    "Pokemon": [
+        {
+            "pokemom": "Lopunny. ",
+            "Peso":"33,3Kg. ",
+            "Altura":"1,19 m. ",
+            "Berry Fav.":" Oran Berry. ",
+            "Ultima evo.":"Mega Lopunny. "
+        },
+        {
+            "pokemom": "Charmander. ",
+            "Peso":"8,5 Kg. ",
+            "Altura":"61 cm. ",
+            "Berry Fav.":" Bagas Cheri. ",
+            "Ultima evo.":"Charizard. " 
+        },
+        {
+            "pokemom": "Pikachu. ",
+            "Peso":"6 Kg. ",
+            "Altura":"40 cm. ",
+            "Berry_Fav":" Bonguris . ",
+            "Ultima_evo.":"Raichu. "
+        },
+        {
+            "pokemom": "Bulbasaur. ",
+            "Peso":"6,9 Kg. ",
+            "Altura":"70 cm. ",
+            "Berry_Fav":" Baya Ziuela. ",
+            "Ultima_evo":"Venusaur. "
+        },
+        {
+            "pokemom": "Squirtle. ",
+            "Peso":"9 Kg. ",
+            "Altura":"50 cm. ",
+            "Berry Fav.":" Baya Meloc. ",
+            "Ultima evo.":"Blastoise. "
+        },
+        {
+            "pokemom": "Eevee. ",
+            "Peso":"6,5 Kg. ",
+            "Altura":"30 cm. ",
+            "Berry Fav.":" Baya Frambu. ",
+            "Ultima evo.":"Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon o Sylveon. "
+        },
+        {
+            "pokemom": "Gengar. ",
+            "Peso":"40,5 Kg. ",
+            "Altura":"1,5 m. ",
+            "Berry Fav.":" Baya Lichi. ",
+            "Ultima evo.":"Não tem evo.  "
+        },
+        {
+            "pokemom": "Snorlax. ",
+            "Peso":"460 Kg. ",
+            "Altura":"2,1 m. ",
+            "Berry Fav.":" Baya Honi. ",
+            "Ultima evo.":"Não tem evo. "
+        },
+        {
+            "pokemom": "Mewtwo. ",
+            "Peso":"122 Kg. ",
+            "Altura":"2 m. ",
+            "Berry Fav.":" Baya Pera. ",
+            "Ultima evo.":"Mega Mewtwo X ou Mega Mewtwo Y. "
+        },
+        {
+            "pokemom": "Lucario. ",
+            "Peso":"54 Kg. ",
+            "Altura":"1,2 m. ",
+            "Berry Fav.":" Baya Jaboca. ",
+            "Ultima evo.":"Mega Lucario. "
+        }
+    ]
+}

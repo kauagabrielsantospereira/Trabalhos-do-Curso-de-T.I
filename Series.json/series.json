@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "nome": "Stranger Things",
+      "criador": "The Duffer Brothers",
+      "ano": 2016,
+      "genero": "Ficção Científica",
+      "sinopse": "Mistérios sobrenaturais em uma pequena cidade.",
+      "temporadas": 5
+    },
+    {
+      "id": 2,
+      "nome": "Breaking Bad",
+      "criador": "Vince Gilligan",
+      "ano": 2008,
+      "genero": "Drama",
+      "sinopse": "Professor vira fabricante de metanfetamina.",
+      "temporadas": 5
+    },
+    {
+      "id": 3,
+      "nome": "Game of Thrones",
+      "criador": "David Benioff & D. B. Weiss",
+      "ano": 2011,
+      "genero": "Fantasia",
+      "sinopse": "Luta pelo trono em Westeros.",
+      "temporadas": 8
+    },
+    {
+      "id": 4,
+      "nome": "Friends",
+      "criador": "David Crane & Marta Kauffman",
+      "ano": 1994,
+      "genero": "Comédia",
+      "sinopse": "Seis amigos vivendo em Nova York.",
+      "temporadas": 10
+    },
+    {
+      "id": 5,
+      "nome": "The Office",
+      "criador": "Greg Daniels",
+      "ano": 2005,
+      "genero": "Comédia",
+      "sinopse": "O cotidiano de um escritório.",
+      "temporadas": 9
+    },
+    {
+      "id": 6,
+      "nome": "Sherlock",
+      "criador": "Mark Gatiss & Steven Moffat",
+      "ano": 2010,
+      "genero": "Mistério",
+      "sinopse": "Sherlock Holmes nos dias atuais.",
+      "temporadas": 4
+    },
+    {
+      "id": 7,
+      "nome": "Dark",
+      "criador": "Baran bo Odar & Jantje Friese",
+      "ano": 2017,
+      "genero": "Suspense",
+      "sinopse": "Mistérios de viagens no tempo em uma cidade alemã.",
+      "temporadas": 3
+    },
+    {
+      "id": 8,
+      "nome": "La Casa de Papel",
+      "criador": "Álex Pina",
+      "ano": 2017,
+      "genero": "Ação",
+      "sinopse": "Assalto à Casa da Moeda da Espanha.",
+      "temporadas": 5
+    },
+    {
+      "id": 9,
+      "nome": "The Crown",
+      "criador": "Peter Morgan",
+      "ano": 2016,
+      "genero": "Drama",
+      "sinopse": "A história do reinado da Rainha Elizabeth II.",
+      "temporadas": 6
+    },
+    {
+      "id": 10,
+      "nome": "How I Met Your Mother",
+      "criador": "Carter Bays & Craig Thomas",
+      "ano": 2005,
+      "genero": "Comédia",
+      "sinopse": "Ted conta aos filhos como conheceu a mãe deles.",
+      "temporadas": 9
+    }
+  ]

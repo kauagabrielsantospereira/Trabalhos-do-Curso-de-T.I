@@ -1,0 +1,51 @@
+<h3>Cadastro de Aluno</h3>
+                    Nome: 
+                    <input type="text" id="nome" value="">
+                    <br>
+                    Nascimento: 
+                    <input type="date" id="nascimento"  value="">
+                    <br>
+                    Telefone: 
+                    <input type="text" id="telefone" value="">
+                    <br>
+                    Endereço: 
+                    <input type="text" id="endereco" value="">
+                    <br>
+                    <input type="hidden" value="inserir">
+                    <button onclick="cadastrar()">cadastrar</button>
+<script>
+     var token ="89e5de4deb5046e4b5629333cf517e56";
+      // Exemplo de requisição GET para listar pessoas
+        fetch("https://crudcrud.com/api/"+token+"/pessoas")
+        .then(response => response.json())
+        .then(data => console.log(data) )
+        .catch(error => console.error(error));
+
+
+        
+     function cadastrar(){
+        // Exemplo de requisição POST para adicionar uma nova pessoa
+        fetch("https://crudcrud.com/api/"+token+"/pessoas", {
+            // metodo de requisição (get, post, put, delete)
+            method: "POST",
+            // cabeçalho da requisição(tipo de conteudo, autorizações, etc...)
+            headers: {
+                "Content-Type": "application/json"
+            },
+            // corpo da requisição (dados que serão enviados)
+            body: JSON.stringify({
+                nome: document.getElementById('nome').value,
+                nascimento: document.getElementById('nascimento').value,
+                endereco: document.getElementById('endereco').value,
+                telefone: document.getElementById('telefone').value
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log("pessoa criada:"+ data))
+        .catch(error => console.error("Erro no POST:"+ error))
+        .finally(() => {
+            // redirecionar para a pagina inicial
+            setTimeout(window.location.href = "cadastra.php", 2000);
+        });
+     }
+    </script>
